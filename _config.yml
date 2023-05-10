@@ -55,7 +55,7 @@ navbar_fixed: true
 footer_fixed: false
 
 # Dimensions
-max_width: 800px
+max_width: 850px
 
 # TODO: add layout settings (single page vs. multi-page)
 
@@ -365,7 +365,7 @@ enable_navbar_social: false  # enables displaying social links in the
 enable_project_categories: true   # enables categorization of projects into
 # multiple categories
 enable_medium_zoom: true   # enables image zoom feature (as on medium.com)
-enable_progressbar: true   # enables a horizontal progress bar linked to the vertical scroll position
+enable_progressbar: false   # enables a horizontal progress bar linked to the vertical scroll position
 
 # -----------------------------------------------------------------------------
 # Library versions

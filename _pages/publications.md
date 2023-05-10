@@ -4,7 +4,7 @@ permalink: /publications/
 title: Publications
 description:
 years: [ 2023, 2020 ]
-nav: true
+nav: false
 importance: 2
 ---
 
