@@ -39,17 +39,18 @@ layout: default
 
         {% if page.selected_papers -%}
         <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Selected Publications</a></h2>
+        * indicates equal contributions.
         {%- include selected_papers.html %}
         {%- endif %}
 
-                {% if page.social %}
-                <div class="social">
-                    <div class="contact-icons">
-                        {% include social.html %}
-                    </div>
-                    <div class="contact-note">{{ site.contact_note }}</div>
-                </div>
-                {% endif %}
+        {% if page.social %}
+        <div class="social">
+            <div class="contact-icons">
+                {% include social.html %}
+            </div>
+            <div class="contact-note">{{ site.contact_note }}</div>
+        </div>
+        {% endif %}
     </article>
 
 </div>

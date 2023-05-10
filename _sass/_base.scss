@@ -19,20 +19,20 @@ strong {
   color: var(--global-text-color);
 }
 
-hr {
-  border-top: 1px solid var(--global-divider-color);
-}
-
-table {
-  td,
-  th {
-    font-size: 1rem;
-  }
-
-  th {
-    font-weight: bold;
-  }
-}
+//hr {
+//  border-top: 1px solid var(--global-divider-color);
+//}
+//
+//table {
+//  td,
+//  th {
+//    font-size: 1rem;
+//  }
+//
+//  th {
+//    font-weight: bold;
+//  }
+//}
 
 a,
 table.table a {
@@ -48,10 +48,10 @@ table.table a {
   }
 }
 
-figure,
-img {
-  max-width: 90vw;
-}
+//figure,
+//img {
+//  max-width: 90vw;
+//}
 
 blockquote {
   background: var(--global-bg-color);
@@ -77,29 +77,29 @@ blockquote {
   text-align: center;
 }
 
-// Card
-
-.card {
-  background-color: var(--global-card-bg-color);
-
-  img {
-    width: 100%;
-  }
-
-  .card-title {
-    color: var(--global-text-color);
-  }
-
-  .card-item {
-    width: auto;
-    margin-bottom: 10px;
-
-    .row {
-      display: flex;
-      align-items: center;
-    }
-  }
-}
+//// Card
+//
+//.card {
+//  background-color: var(--global-card-bg-color);
+//
+//  img {
+//    width: 100%;
+//  }
+//
+//  .card-title {
+//    color: var(--global-text-color);
+//  }
+//
+//  .card-item {
+//    width: auto;
+//    margin-bottom: 10px;
+//
+//    .row {
+//      display: flex;
+//      align-items: center;
+//    }
+//  }
+//}
 
 // Citation
 
@@ -111,6 +111,7 @@ blockquote {
 // Profile
 
 .profile {
+  margin-left: 1rem;
   width: 100%;
 
   .address {
@@ -125,13 +126,13 @@ blockquote {
   }
 }
 
-.profile.float-right {
-  margin-left: 1rem;
-}
-
-.profile.float-left {
-  margin-right: 1rem;
-}
+//.profile.float-right {
+//  margin-left: 1rem;
+//}
+//
+//.profile.float-left {
+//  margin-right: 1rem;
+//}
 
 @media (min-width: 576px) {
   .profile {
@@ -147,7 +148,7 @@ blockquote {
 
 .post-description {
   margin-bottom: 2rem;
-  font-size: 0.875rem;
+  font-size: 1rem;
 
   a {
     color: inherit;
@@ -214,7 +215,7 @@ blockquote {
     }
   }
 
-  .navbar-nav .nav-item.active>.nav-link {
+  .navbar-nav .nav-item.active > .nav-link {
     background-color: inherit;
     font-weight: bolder;
     color: var(--global-theme-color);
@@ -295,13 +296,32 @@ blockquote {
   }
 }
 
+// News
+.news table td {
+  font-size: 1rem;
+  color: var(--global-text-color);
+  padding: -1rem;
+}
+
+.news table th {
+  color: var(--global-text-color);
+  width: 100px;
+}
+
+//here I hack the padding directly
+.news table.table-sm th, table.table-sm td {
+  padding-top: 0rem;
+  padding-bottom: 0.5rem;
+}
+
+
 // Social (bottom)
 
 .social {
   text-align: left;
 
   .contact-icons {
-    font-size: 32px;
+    font-size: 2rem;
 
     a {
       i::before {
@@ -316,6 +336,9 @@ blockquote {
       }
     }
   }
+
+  margin-top: -1rem;
+  margin-bottom: 1rem;
 
   .contact-note {
     font-size: 0.8rem;
@@ -572,7 +595,8 @@ footer.sticky-bottom {
     margin-top: 0;
 
     li {
-      margin-bottom: 1rem;
+      min-height: 110px;
+      margin-bottom: 0.5rem;
 
       .preview {
         width: 100%;
@@ -581,7 +605,7 @@ footer.sticky-bottom {
       }
 
       .abbr {
-        height: 2rem;
+        height: 8rem;
         margin-bottom: 0.5rem;
 
         abbr {
@@ -589,6 +613,9 @@ footer.sticky-bottom {
           background-color: var(--global-theme-color);
           padding-left: 1rem;
           padding-right: 1rem;
+          position: absolute;
+          top: 8px;
+          left: 16px;
 
           a {
             color: white;
@@ -619,12 +646,12 @@ footer.sticky-bottom {
           }
         }
 
-        >em {
+        > em {
           border-bottom: 1px solid;
           font-style: normal;
         }
 
-        >span.more-authors {
+        > span.more-authors {
           color: var(--global-text-color-light);
           border-bottom: 1px dashed var(--global-text-color-light);
           cursor: pointer;
@@ -644,26 +671,10 @@ footer.sticky-bottom {
           padding-right: 1rem;
           padding-top: 0.25rem;
           padding-bottom: 0.25rem;
-          margin-left: 0;
 
           &:hover {
             color: var(--global-theme-color);
             border-color: var(--global-theme-color);
-          }
-        }
-      }
-
-      .badges {
-        padding-bottom: 0.5rem;
-        span {
-          display: inline-block;
-          color: $black-color;
-          height: 100%;
-          padding-right: 0.5rem;
-          vertical-align: middle;
-
-          &:hover {
-            text-decoration: underline;
           }
         }
       }
@@ -673,7 +684,7 @@ footer.sticky-bottom {
         max-height: 0px;
         overflow: hidden;
         text-align: justify;
-        transition-property: 0.15s ease;
+        -webkit-transition: 0.15s ease;
         -moz-transition: 0.15s ease;
         -ms-transition: 0.15s ease;
         -o-transition: 0.15s ease;
@@ -693,7 +704,7 @@ footer.sticky-bottom {
 
       .hidden.open {
         max-height: 100em;
-        transition-property: 0.15s ease;
+        -webkit-transition: 0.15s ease;
         -moz-transition: 0.15s ease;
         -ms-transition: 0.15s ease;
         -o-transition: 0.15s ease;
@@ -706,6 +717,17 @@ footer.sticky-bottom {
 
       div.abstract.hidden.open {
         border-color: var(--global-text-color);
+      }
+
+      .teaser {
+        border-radius: 8px;
+        box-shadow: 3px 3px 6px #888;
+        height: 120px;
+        width: 180px;
+        margin-top: 5px;
+        margin-left: 5px;
+        margin-bottom: 5px;
+        object-fit: cover;
       }
     }
   }
@@ -748,202 +770,202 @@ html.transition *:after {
   transition-delay: 0 !important;
 }
 
-// Extra Markdown style (post Customization)
-.post {
-  .post-meta {
-    color: var(--global-text-color-light);
-    font-size: 0.875rem;
-    margin-bottom: 0;
-  }
-
-  .post-tags {
-    color: var(--global-text-color-light);
-    font-size: 0.875rem;
-    padding-top: 0.25rem;
-    padding-bottom: 1rem;
-
-    a {
-      color: var(--global-text-color-light);
-      text-decoration: none;
-
-      &:hover {
-        color: var(--global-theme-color);
-      }
-    }
-  }
-
-  .post-content {
-    blockquote {
-      border-left: 5px solid var(--global-theme-color);
-      padding: 8px;
-    }
-  }
-}
-
-progress {
-  /* Positioning */
-  position: fixed;
-  left: 0;
-  top: 56px;
-  z-index: 10;
-
-  /* Dimensions */
-  width: 100%;
-  height: 1px;
-
-  /* Reset the appearance */
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-
-  /* Get rid of the default border in Firefox/Opera. */
-  border: none;
-
-  /* Progress bar container for Firefox/IE10  */
-  background-color: transparent;
-
-  /* Progress bar value for IE10  */
-  color: var(--global-theme-color);
-}
-
-progress::-webkit-progress-bar {
-  background-color: transparent;
-}
-
-progress::-webkit-progress-value {
-  background-color: var(--global-theme-color);
-}
-
-progress::-moz-progress-bar {
-  background-color: var(--global-theme-color);
-}
-
-.progress-container {
-  width: 100%;
-  background-color: transparent;
-  position: fixed;
-  top: 56px;
-  left: 0;
-  height: 5px;
-  display: block;
-}
-
-.progress-bar {
-  background-color: var(--global-theme-color);
-  width: 0%;
-  display: block;
-  height: inherit;
-}
-
-/* Copy button */
-.code-display-wrapper {
-  position: relative;
-
-  .copy {
-    background: var(--global-card-bg-color);
-    border-color: var(--global-bg-color);
-    border-radius: .3rem;
-    border-style: none;
-    color: var(--global-text-color);
-    font-size: medium;
-    opacity: 0;
-    position: absolute;
-    right: .5rem;
-    top: .5rem;
-  }
-
-  &:active .copy,
-  &:focus .copy,
-  &:hover .copy {
-    color: var(--global-hover-color);
-    opacity: 1;
-  }
-}
-
-.btn-group.dropdown {
-  .btn {
-    box-shadow: none;
-    -webkit-box-shadow: none;
-  }
-
-  .btn-secondary.dropdown-toggle {
-    border: 1px solid var(--global-divider-color);
-
-    .page-size {
-      color: inherit;
-    }
-
-    &:not(.active) {
-      background-color: var(--global-bg-color) !important;
-      color: var(--global-text-color);
-    }
-
-    &:hover {
-      background-color: var(--global-hover-color) !important;
-      color: var(--global-hover-text-color) !important;
-    }
-  }
-
-  .dropdown-menu {
-    background-color: var(--global-bg-color);
-  }
-
-  .dropdown-item {
-    background-color: var(--global-bg-color);
-    color: var(--global-text-color);
-
-    &:hover {
-      color: var(--global-hover-color);
-    }
-  }
-
-  .dropdown-item.active, .dropdown-item:active {
-    background-color: var(--global-hover-color);
-    color: var(--global-hover-text-color) !important;
-
-    &:hover {
-      color: var(--global-hover-text-color);
-    }
-  }
-}
-
-/* Table of Contents */
-nav[data-toggle="toc"] {
-  top: 5rem;
-
-  .nav .nav>li>a {
-    font-size: .75rem;
-  }
-
-  .nav>li>a {
-    color: var(--global-text-color);
-    font-size: .75rem;
-
-    &:hover {
-      color: var(--global-hover-color);
-      border-left-color: var(--global-hover-color);
-    }
-  }
-
-  .nav-link.active {
-    color: var(--global-theme-color);
-    border-left-color: var(--global-theme-color);
-    font-size: .75rem;
-
-    &:hover {
-      color: var(--global-hover-color);
-      border-left-color: var(--global-hover-color);
-    }
-  }
-}
-
-/* small screens */
-@media (max-width: 576px) {
-  /* override stickyness so that the navigation does not follow scrolling */
-  nav[data-toggle="toc"] {
-    visibility: hidden;
-    height: 0;
-    top: 0;
-  }
-}
+//// Extra Markdown style (post Customization)
+//.post {
+//  .post-meta {
+//    color: var(--global-text-color-light);
+//    font-size: 0.875rem;
+//    margin-bottom: 0;
+//  }
+//
+//  .post-tags {
+//    color: var(--global-text-color-light);
+//    font-size: 0.875rem;
+//    padding-top: 0.25rem;
+//    padding-bottom: 1rem;
+//
+//    a {
+//      color: var(--global-text-color-light);
+//      text-decoration: none;
+//
+//      &:hover {
+//        color: var(--global-theme-color);
+//      }
+//    }
+//  }
+//
+//  .post-content {
+//    blockquote {
+//      border-left: 5px solid var(--global-theme-color);
+//      padding: 8px;
+//    }
+//  }
+//}
+//
+//progress {
+//  /* Positioning */
+//  position: fixed;
+//  left: 0;
+//  top: 56px;
+//  z-index: 10;
+//
+//  /* Dimensions */
+//  width: 100%;
+//  height: 1px;
+//
+//  /* Reset the appearance */
+//  -webkit-appearance: none;
+//  -moz-appearance: none;
+//  appearance: none;
+//
+//  /* Get rid of the default border in Firefox/Opera. */
+//  border: none;
+//
+//  /* Progress bar container for Firefox/IE10  */
+//  background-color: transparent;
+//
+//  /* Progress bar value for IE10  */
+//  color: var(--global-theme-color);
+//}
+//
+//progress::-webkit-progress-bar {
+//  background-color: transparent;
+//}
+//
+//progress::-webkit-progress-value {
+//  background-color: var(--global-theme-color);
+//}
+//
+//progress::-moz-progress-bar {
+//  background-color: var(--global-theme-color);
+//}
+//
+//.progress-container {
+//  width: 100%;
+//  background-color: transparent;
+//  position: fixed;
+//  top: 56px;
+//  left: 0;
+//  height: 5px;
+//  display: block;
+//}
+//
+//.progress-bar {
+//  background-color: var(--global-theme-color);
+//  width: 0%;
+//  display: block;
+//  height: inherit;
+//}
+//
+///* Copy button */
+//.code-display-wrapper {
+//  position: relative;
+//
+//  .copy {
+//    background: var(--global-card-bg-color);
+//    border-color: var(--global-bg-color);
+//    border-radius: .3rem;
+//    border-style: none;
+//    color: var(--global-text-color);
+//    font-size: medium;
+//    opacity: 0;
+//    position: absolute;
+//    right: .5rem;
+//    top: .5rem;
+//  }
+//
+//  &:active .copy,
+//  &:focus .copy,
+//  &:hover .copy {
+//    color: var(--global-hover-color);
+//    opacity: 1;
+//  }
+//}
+//
+//.btn-group.dropdown {
+//  .btn {
+//    box-shadow: none;
+//    -webkit-box-shadow: none;
+//  }
+//
+//  .btn-secondary.dropdown-toggle {
+//    border: 1px solid var(--global-divider-color);
+//
+//    .page-size {
+//      color: inherit;
+//    }
+//
+//    &:not(.active) {
+//      background-color: var(--global-bg-color) !important;
+//      color: var(--global-text-color);
+//    }
+//
+//    &:hover {
+//      background-color: var(--global-hover-color) !important;
+//      color: var(--global-hover-text-color) !important;
+//    }
+//  }
+//
+//  .dropdown-menu {
+//    background-color: var(--global-bg-color);
+//  }
+//
+//  .dropdown-item {
+//    background-color: var(--global-bg-color);
+//    color: var(--global-text-color);
+//
+//    &:hover {
+//      color: var(--global-hover-color);
+//    }
+//  }
+//
+//  .dropdown-item.active, .dropdown-item:active {
+//    background-color: var(--global-hover-color);
+//    color: var(--global-hover-text-color) !important;
+//
+//    &:hover {
+//      color: var(--global-hover-text-color);
+//    }
+//  }
+//}
+//
+///* Table of Contents */
+//nav[data-toggle="toc"] {
+//  top: 5rem;
+//
+//  .nav .nav > li > a {
+//    font-size: .75rem;
+//  }
+//
+//  .nav > li > a {
+//    color: var(--global-text-color);
+//    font-size: .75rem;
+//
+//    &:hover {
+//      color: var(--global-hover-color);
+//      border-left-color: var(--global-hover-color);
+//    }
+//  }
+//
+//  .nav-link.active {
+//    color: var(--global-theme-color);
+//    border-left-color: var(--global-theme-color);
+//    font-size: .75rem;
+//
+//    &:hover {
+//      color: var(--global-hover-color);
+//      border-left-color: var(--global-hover-color);
+//    }
+//  }
+//}
+//
+///* small screens */
+//@media (max-width: 576px) {
+//  /* override stickyness so that the navigation does not follow scrolling */
+//  nav[data-toggle="toc"] {
+//    visibility: hidden;
+//    height: 0;
+//    top: 0;
+//  }
+//}
 

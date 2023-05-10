@@ -1,9 +1,12 @@
 ---
 layout: aboutnew
-title: About
+title: About me
 permalink: /
 subtitle: >
-  PhD Student, Graduate Research Assistant<br>College of Engineering, Purdue University<br>Office: 127, POTR, PWL
+  PhD Student, Graduate Research Assistant<br>
+  College of Engineering, Purdue University<br>
+  Email: yunsheng [at] purdue [dot] edu
+#  Office: 127, POTR, PWL
 profile:
   align:
   image: prof_pic_sq.jpg
@@ -12,7 +15,7 @@ profile:
 
 news: true  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts
-selected_papers: false # includes a list of papers marked as "selected={true}"
+selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
