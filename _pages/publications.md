@@ -3,8 +3,8 @@ layout: page
 permalink: /publications/
 title: Publications
 description:
-years: [ 2023, 2020 ]
-nav: false
+years: [ 2023 ]
+nav: true
 importance: 2
 ---
 
