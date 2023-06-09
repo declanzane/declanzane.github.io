@@ -10,7 +10,7 @@
   - firstname: [ "Wenqian" ]
     url: https://wenqian-ye.github.io/
 
-"Zhao":
+"Zhao*":
   - firstname: [ "Sicheng" ]
     url: https://sites.google.com/view/schzhao
 
@@ -19,17 +19,20 @@
     url: https://engineering.purdue.edu/~lusu/
 
 "Yuan":
-  - firstname: ["Liangqi"]
+  - firstname: [ "Liangqi" ]
     url: https://liangqiy.com/
 
 "Cui":
-  - firstname: ["Can"]
+  - firstname: [ "Can" ]
     url: https://www.linkedin.com/in/can-cui-2573b7230/
 
 "Lu":
-  - firstname: ["Juanwu"]
+  - firstname: [ "Juanwu" ]
     url: https://www.linkedin.com/in/juanwu-lu/
 
+"Keutzer":
+  - firstname: [ "Kurt" ]
+    url: https://people.eecs.berkeley.edu/~keutzer/
 
 #"Adams":
 #  - firstname: [ "Edwin", "E.", "E. P.", "Edwin Plimpton" ]
