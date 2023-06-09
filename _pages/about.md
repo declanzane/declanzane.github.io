@@ -24,7 +24,7 @@ I am currently a first-year PhD student at [Purdue University](https://www.purdu
 assistant under the guidance of [Prof. Ziran Wang](https://ziranw.github.io/). Prior to joining Purdue,
 I earned my Master's degree in [Computer Science](https://cs.nyu.edu/home/index.html)
 from [New York University](https://www.nyu.edu/). My research interests revolve around the intersection of computer
-vision, autonomous driving, and driver behavior modeling.
+vision, autonomous driving, and digital twin.
 
 
 <!---
