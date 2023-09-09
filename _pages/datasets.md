@@ -3,7 +3,7 @@ layout: page
 permalink: /datasets/
 title: Two Open-Source Datasets
 description:
-nav: true
+nav: false
 nav_order: 3
 ---
 
