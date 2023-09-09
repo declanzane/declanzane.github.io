@@ -18,6 +18,8 @@ TBA
 
 ### Dataset 2: In-Cabin User Command Understanding (UCU)
 
+[Data Download](https://github.com/LLVM-AD/ucu-dataset/blob/main/ucu.csv); [Code for Evaluation](https://github.com/LLVM-AD/ucu-dataset)
+
 The future of autonomous vehicles is not only to transport passengers from point A to point B, but also to adapt to
 their needs and preferences. Large Language Models (LLMs) have provided an opportunity to advance the state-of-the-art
 of this vision. This dataset focuses on understanding user commands in the context of autonomous vehicles.
@@ -63,11 +65,16 @@ participants are free to use any other data for training or come up with their o
 
 #### Evaluation
 
-To use the provided codebase for evaluation, the output should be in the following format:
+To use the provided code for evaluation, the output should be in the following format:
 
 `<command_id> <A1> <A2> <A3> <A4> <A5> <A6> <A7> <A8>`
 
 where `<command_id>` is the command numeric identifier, starting with 1. Command IDs have been
 provided in the CSV file in the data download link.
 `<A1>` to `<A8>` are the answers to the 8 questions, where 1 indicates "Yes" and 0 indicates "No".
+
+We use two accuracy metrics for evaluation:
+
+1. Command-level accuracy: The command is considered correct if all 8 answers are correct.
+2. Question-level accuracy: The question is considered correct if the answer is correct.
 
