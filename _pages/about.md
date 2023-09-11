@@ -6,7 +6,6 @@ subtitle: >
   PhD Student, Graduate Research Assistant<br>
   College of Engineering, Purdue University<br>
   Email: yunsheng [at] purdue [dot] edu
-#  Office: 127, POTR, PWL
 profile:
   align:
   image: prof_pic_sq.jpg
