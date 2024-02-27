@@ -6,6 +6,10 @@
   - firstname: [ "Xu" ]
     url: https://www.irohxucao.com/
 
+"Cao*":
+  - firstname: [ "Xu" ]
+    url: https://www.irohxucao.com/
+
 "Ye":
   - firstname: [ "Wenqian" ]
     url: https://wenqian-ye.github.io/
@@ -27,6 +31,10 @@
     url: https://liangqiy.com/
 
 "Cui":
+  - firstname: [ "Can" ]
+    url: https://cancui19.github.io/
+
+"Cui*":
   - firstname: [ "Can" ]
     url: https://cancui19.github.io/
 
