@@ -4,7 +4,7 @@ title: About me
 permalink: /
 subtitle: >
   PhD Student, Graduate Research Assistant<br>
-  College of Engineering, Purdue University<br>
+  Digital Twin Lab, Purdue University<br>
   Email: yunsheng [at] purdue [dot] edu
 profile:
   align:
